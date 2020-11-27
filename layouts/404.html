@@ -1,0 +1,32 @@
+{{ define "main" }}
+
+<main>
+    <div class="block introduction">
+        <div class="column left">
+            <img src="https://avatars3.githubusercontent.com/u/579484" class="portrait" alt="Portrait" />
+        </div>
+        <div class="column right">
+            <h1>404</h1>
+            <p>Oops. Wrong page. Go <a href="https://harthoover.com">home</a>.</p>
+
+            <div class="links">
+                {{- range .Site.Params.links -}}
+                    <a rel="me" href="{{ .url | safeURL }}" title="{{ .title }}">
+                        <span class="{{ .iconset | default "fab" }} {{.iconorigin | default "fa" }}-{{ .icon }}"></span>
+                    </a>
+                {{- end -}}
+            </div>
+        </div>
+    </div>
+
+    {{- if (fileExists "layouts/partials/content.html") -}}
+        <div class="block">
+            <div class="column left"></div>
+            <div class="column right">
+                {{- partial "content.html" . -}}
+            </div>
+        </div>
+    {{- end -}}
+</main>
+
+{{ end }}

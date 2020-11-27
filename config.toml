@@ -1,0 +1,49 @@
+baseURL = "https://harthoover.com/"
+languageCode = "en"
+defaultContentLanguage = "en"
+title = "Hart Hoover"
+theme = "hallo"
+disableKinds = ["page", "section", "taxonomy", "taxonomyTerm"]
+
+[Author]
+    name = "Hart"
+
+[params]
+    avatar = "https://avatars2.githubusercontent.com/u/579484"
+    greeting = "Hi!"
+
+    [params.colors]
+        background = "#06118e"
+        foreground = "#edf7ff"
+        hover = "#ffba82"
+
+    [[params.links]]
+        iconset = "fas"
+        icon = "envelope"
+        title = "E-mail"
+        url = "mailto:hart.hoover@gmail.com"
+
+    [[params.links]]
+        icon = "linkedin"
+        title = "LinkedIn"
+        url = "https://linkedin.com/in/harthoover"
+
+    [[params.links]]
+        icon = "github"
+        title = "Github"
+        url = "https://github.com/hhoover"
+
+    [[params.links]]
+        icon = "twitter"
+        title = "Twitter"
+        url = "https://twitter.com/hhoover"
+    
+    [[params.links]]
+        icon = "slack"
+        title = "Slack"
+        url = "https://kubernetes.slack.com/archives/D586ME84V"
+
+    [[params.links]]
+        icon = "twitch"
+        title = "Twitch"
+        url = "https://twitch.tv/AceOfHarts"
